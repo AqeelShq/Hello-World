@@ -1,0 +1,114 @@
+// Basics
+let myName = "Aqeel";
+const myAge = 17;
+let myPhone = "98217134"; //"let" is used to define but can be changed afterwards
+myPhone = "65-98217134"
+let myArr = [1, 2, 3, 4, 5];
+let isHuman = true;
+
+console.log(myName)
+
+let a = (5 - 9) * 2
+let b = (9 - 1) ** 2
+let c = b / a
+
+console.log(b, a, c)
+
+let e = Math.random();
+let f = Math.round(123.456789);
+let g = Math.cos(Math.PI);
+let h = Math.E ** 2
+console.log(e)
+console.log(f)
+console.log("cos(pi) = " + g)
+console.log("e-squared = " + h)
+
+// STRINGS!!
+
+let FirstName = "Andrew"
+let LastName = "Johnson"
+let FullName = FirstName + " " + LastName;
+let nameLength = FullName.length;
+console.log(FullName + ", Length: " + nameLength);
+
+let language = "JavaScript";
+console.log(language[0]);
+console.log(language.substring(2, 5))
+console.log(language.toUpperCase())
+console.log(language.replace("Java", "Type"))
+console.log(language.includes("Java"));
+
+
+// if .. age
+let age = parseInt(prompt("Please enter your age: "));
+if (age < 12) {
+    console.log(`You are a kid`)
+}
+else if (age <= 18) {
+    console.log("You are a teenager")
+}
+else {
+    console.log("You are an adult")
+}
+
+// for loop
+let fruits = ["Apple", "Mango", "Pineapple", "Banana", "Tomato"];
+
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i])
+}
+
+for (let fruit of fruits) {
+    console.log(fruit)
+}
+let counter = 10;
+while (counter > 0) {
+    console.log(counter)
+    counter--;
+    console.log(`Almost There!`)
+}
+console.log(`Happy New Year`)
+
+let numbers = [123, 456, 789];
+let schools = ["RI", "ASR", "EJC", "ACJC"];
+let mixed = [1.23, "Happy", [4, 5, 6]]
+
+console.log(numbers[0]);
+console.log(schools.length);
+
+schools.push("TMJC"); //insert at end
+schools.push("HCI");
+console.log(schools)
+schools.pop(); // removes last element
+console.log(schools)
+
+for (let i = 0; i < schools.length; i ++) {
+    console.log(schools[i])
+}
+
+
+// Objects( dictionaries like python)
+
+let person = {
+    firstName: "Aqeel",
+    lastName: "Shauqi",
+    age: 17,
+    isStudent: true
+};
+
+person["age"] = 18;
+person["isStudent"] = false
+console.log(person.firstName)
+console.log(person.age)
+console.log(person["firstName"], person["lastName"])
+
+
+function cube(x) {
+    return x ** 3;
+}
+
+// Arrow functions (shorter)
+
+let magnitude = (x, y, z) => Math.sqrt(x ** 2 + y ** 2 + z ** 2);
+
+console.log(magnitude(3, 4, 5));
